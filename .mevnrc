@@ -1,0 +1,8 @@
+{
+  "name": "hello-dose",
+  "template": "Default",
+  "isConfigured": {
+    "client": false,
+    "server": false
+  }
+}
