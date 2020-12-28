@@ -17,6 +17,26 @@ export default new Router({
       path: "/about",
       name: "about",
       component: () => import("./views/About.vue")
+    },
+    {
+      path: "/cart",
+      name: "Cart",
+      component: () => import("./views/CarPage.vue")
+    },
+    {
+      path: "/products",
+      name: "Products",
+      component: () => import("./views/ProductsPage.vue")
+    },
+    {
+      path: "/products/:id",
+      name: "ProductDetails",
+      component: () => import("./views/ProductDetailsPage.vue")
+    },
+    {
+      path: "*",
+      name: "NotFoundPage",
+      component: () => import("./views/NotFoundPage.vue")
     }
   ]
 });
